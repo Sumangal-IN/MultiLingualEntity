@@ -1,18 +1,21 @@
 # Handling Multilingual Entity Description
 
-This project is a POC to confirm management(CREATE, DELETE, UPDATE, READ) of entity description managed in multiple
-language.
+This project is a POC to confirm management (CREATE, DELETE, UPDATE, READ) of entity description managed in multiple
+language using json-to-json merge with gson library.
 
 There is a multi-level entity called **Level** has three levels - level1, level2, level3. Once such dummy entity for
-demo is already present in the service layer. This project runs in non-persistent mode. i.e. any change you made will
-not be saved. Moreover, you cannot change the existing entity, the output is just a modified copy of the source data.
+demo is already present in the service layer.
+
+This project runs in non-persistent mode. i.e. your changes will not be saved.
+
+Moreover, you cannot change the existing entity, the output is just a modified copy of the source data.
 
 ## GET
 
 ### Get all entities in all available language descriptions
 
 `GET http://localhost:8080/levels`
-
+### Output
 ```json
 [
   {
@@ -75,7 +78,7 @@ not be saved. Moreover, you cannot change the existing entity, the output is jus
 ### Get entity in specific language
 
 `GET http://localhost:8080/levels/l1/language/en`
-
+### Output
 ```json
 {
   "descriptions": [
@@ -118,7 +121,7 @@ not be saved. Moreover, you cannot change the existing entity, the output is jus
 ### Remove a specific language
 
 `DELETE http://localhost:8080/levels/l1/language/en`
-
+### Output
 ```json
 {
   "id": "l1",
@@ -203,7 +206,7 @@ not be saved. Moreover, you cannot change the existing entity, the output is jus
   }
 }
 ```
-
+### Output
 ```json
 {
   "id": "l1",
