@@ -16,24 +16,24 @@ public class LevelService {
             .id("l1")
             .descriptions(Arrays.asList
                     (Description.builder().content("level one").language("en").build(),
-                            Description.builder().content("level one").language("fr").build()))
+                            Description.builder().content("niveau une").language("fr").build()))
             .levelTwo(LevelTwo.builder()
                     .id("l11")
                     .descriptions(Arrays.asList(
                             Description.builder().content("level two").language("en").build(),
-                            Description.builder().content("level two").language("fr").build()))
+                            Description.builder().content("niveau deux").language("fr").build()))
                     .levelThrees(Arrays.asList(
                             LevelThree.builder()
                                     .id("l111")
                                     .descriptions(Arrays.asList(
                                             Description.builder().content("level three 1").language("en").build(),
-                                            Description.builder().content("level three 2").language("fr").build()))
+                                            Description.builder().content("niveau trois 2").language("fr").build()))
                                     .build(),
                             LevelThree.builder()
                                     .id("l112")
                                     .descriptions(Arrays.asList(
                                             Description.builder().content("level three 2").language("en").build(),
-                                            Description.builder().content("level three 2").language("fr").build()))
+                                            Description.builder().content("niveau trois 2").language("fr").build()))
                                     .build()))
                     .build())
             .build());
