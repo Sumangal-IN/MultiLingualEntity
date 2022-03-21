@@ -1,7 +1,5 @@
 # Handling Multilingual Entity Description
 
-<hr/>
-
 This project is a POC to confirm management(CREATE, DELETE, UPDATE, READ) of entity description managed in multiple
 language.
 
