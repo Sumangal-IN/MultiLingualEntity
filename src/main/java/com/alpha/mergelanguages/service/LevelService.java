@@ -14,9 +14,9 @@ public class LevelService {
 
     private static final List<LevelOne> levels = Arrays.asList(LevelOne.builder()
             .id("l1")
-            .descriptions(Arrays.asList
-                    (Description.builder().content("level one").language("en").build(),
-                            Description.builder().content("niveau une").language("fr").build()))
+//            .descriptions(Arrays.asList
+//                    (Description.builder().content("level one").language("en").build(),
+//                            Description.builder().content("niveau une").language("fr").build()))
             .levelTwo(LevelTwo.builder()
                     .id("l11")
                     .descriptions(Arrays.asList(

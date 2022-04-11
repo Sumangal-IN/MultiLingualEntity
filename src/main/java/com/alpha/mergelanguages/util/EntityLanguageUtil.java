@@ -83,6 +83,8 @@ public class EntityLanguageUtil {
     private void upsert(JsonElement src, JsonElement incoming) {
         for (Map.Entry<String, JsonElement> field : incoming.getAsJsonObject().entrySet()) {
             if (field.getKey().equals(DESCRIPTIONS)) {
+                if(!src.getAsJsonObject().has(field.getKey()))
+                    src.getAsJsonObject().add(field.getKey(), new JsonArray());
                 field.getValue().getAsJsonArray().forEach(jsonElement -> patch(jsonElement,
                         src.getAsJsonObject().get(field.getKey()).getAsJsonArray()));
             } else if (field.getValue().isJsonObject()) {
