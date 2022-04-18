@@ -62,7 +62,7 @@ public class EntityLanguageUtil {
                         jsonElementToDelete = jsonElement;
                 }
                 if (jsonElementToDelete != null) {
-                    target.getAsJsonObject().get(DESCRIPTIONS).getAsJsonArray().remove(jsonElementToDelete);
+                    field.getValue().getAsJsonArray().remove(jsonElementToDelete);
                 }
             } else if (field.getValue().isJsonObject()) {
                 remove(field.getValue(), languageCode);
